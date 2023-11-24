@@ -1,19 +1,19 @@
-﻿Console.WriteLine("Введите число");
-int x = Convert.ToInt32(Console.ReadLine());
-int y = Convert.ToInt32(Console.ReadLine());
-int s = 0;
-    int[] Value= new int[x];
-for (int p = 0; p < x; p++) {
-    p = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число");
+int Z=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите размерность массива");
+int N = Convert.ToInt32(Console.ReadLine());
+int [] rem= new int[N];
+for (int i = 0; i < N; i++) {
+    Console.WriteLine("Введите элемент массива");
+    rem [i] = Convert.ToInt32(Console.ReadLine());
 }
-//int i = 0;
-for (int k = 0; k < x; k++)
+int r = 0;
+for (int i = 0; i < N; i++)
 {
-    if (Value[k] > s)
+    if (rem[i] > Z)
     {
-        Value[k] = s;
-        s++;
+        rem[i] = Z;
+        r++;
     }
 }
-Console.WriteLine(Value);
-Console.WriteLine(s);
+Console.WriteLine(r);
